@@ -6,7 +6,7 @@ class Simon
   def initialize
     @seq = []
     @game_over = false
-    @sequence_length = 0 #This seems counter-intuitive and causes extra value problem later...
+    @sequence_length = 1 #This seems counter-intuitive and causes extra value problem later...
   end
 
   def play
@@ -19,16 +19,24 @@ class Simon
 
   def take_turn
     show_sequence
-    @game_over = true unless require_sequence
+    require_sequence
+    #system('clear')
     round_success_message unless @game_over
   end
 
   def show_sequence
     add_random_color
-    @seq.each { |v| p v }
+    system("clear")
+    puts "Now pay attention to the sequence!"
+    sleep(1)
+    system("clear")
+    @seq.each { |v| print "#{v} " }
+    sleep(2)
+    system("clear")
   end
 
   def require_sequence
+    puts "Please type in a single letter for each color in the sequence..."
     guess = gets.chomp.split("").map do |letter|
       case letter
       when 'r'
@@ -41,7 +49,7 @@ class Simon
         'yellow'
       end
     end
-    guess == @seq
+    @game_over = true unless guess == @seq
   end
 
   def add_random_color
