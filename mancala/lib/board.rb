@@ -1,5 +1,4 @@
 require 'byebug'
-
 class Board
   attr_accessor :cups
 
@@ -39,10 +38,26 @@ class Board
     next_turn(current_cup)
     render
     own_cup = opponent_cup == 13 ? 6 : 13
-    debugger
+    #debugger
     return :switch if @cups[current_cup].empty?
     return :prompt if current_cup == own_cup
     current_cup
+  end
+
+  def get_current_cup(current_player_name)
+    if current_player_name == @name1
+      6
+    else
+      13
+    end
+  end
+
+  def get_opponent_cup(current_player_name)
+    if current_player_name == @name1
+      13
+    else
+      6
+    end
   end
 
   def next_turn(ending_cup_idx)

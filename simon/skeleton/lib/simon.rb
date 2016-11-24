@@ -22,6 +22,11 @@ class Simon
     require_sequence
     #system('clear')
     round_success_message unless @game_over
+    increment_sequence_length
+  end
+
+  def increment_sequence_length
+    @sequence_length += 1
   end
 
   def show_sequence
@@ -53,9 +58,7 @@ class Simon
   end
 
   def add_random_color
-    new_color = COLORS[rand(4)]
-    @seq << new_color
-    @sequence_length += 1
+    @seq << COLORS[rand(4)]
   end
 
   def round_success_message
