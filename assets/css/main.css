@@ -1560,16 +1560,8 @@
 		}
 /* Resume */
 
-	#resume ul {
-		text-align: center;
-	}
 	#resume h4 {
 		text-align: center;
-	}
-
-	#resume ul li {
-		display: inline-block;
-
 	}
 
 /* Footer */
