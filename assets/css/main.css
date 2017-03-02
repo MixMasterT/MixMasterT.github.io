@@ -1560,7 +1560,25 @@
 		}
 /* Resume */
 
-	#resume h4 {
+	/*#resume h4 {
+		text-align: center;
+	}
+
+/* Work */
+	/*.screenshot {
+		text-align: center;
+	} */
+	.screenshot img {
+		width: 90%;
+		object-fit: cover;
+	}
+
+	#work h3 {
+		margin-top: 15px;
+	}
+
+	.centeredLink {
+		margin: 0 auto;
 		text-align: center;
 	}
 
