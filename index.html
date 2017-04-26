@@ -13,6 +13,26 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+			<script>
+				function createIframe(){
+				  var i = document.createElement("iframe");
+				  i.src = "https://travel-agent-aloysius-53663.netlify.com/";
+				  i.scrolling = "auto";
+				  i.frameborder = "0";
+					i.width = "400px";
+					i.height = "440px";
+					document.getElementById('strv-demo').appendChild(i);
+					console.log("createIframe ran");
+				};
+
+				if (window.addEventListener) {
+					window.addEventListener("DOMContentLoaded", createIframe, false);
+				}
+				else if (window.attachEvent) {
+					window.attachEvent("onload", createIframe);
+				}
+				else window.onload = createIframe;
+		</script>
 	</head>
 	<body>
 
@@ -28,6 +48,18 @@
 							<div class="inner">
 								<h1>Torah Oglander</h1>
 								<p><!--[-->Software engineer, linguist, and educator.<br />I look forward to putting my skills to use to help you solve problems!<!--]--><br />
+									<ul class="frontpage-skills">
+										<li><span>Ruby</span></li>
+										<li><span>Rails</span></li>
+										<li><span>JavaScript</span></li>
+										<li><span>React/Redux</span></li>
+										<li><span>Git</span></li>
+										<li><span>HTML5</span></li>
+										<li><span>CSS/SASS</span></li>
+										<li><span>Python</span>Python</li>
+										<li><span>Python</span>Python</li>
+										<li><span>Python</span></li>
+									</ul>
 								<!--[-->Check the links below to find out more...<!--]--></p>
 							</div>
 						</div>
@@ -92,6 +124,20 @@
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Work</h2>
+
+								<div class="centeredLink">
+									<span class="screenshot" id="strv-demo">
+									</span>
+								<h3><a href="https://travel-agent-aloysius-53663.netlify.com/" />Awesome Events</a></h3>
+								</div>
+								<h4>Front-end Demo Project</h4>
+								<ul>
+									<li>React/Redux frontend handles asynchronous API calls fluidly</li>
+									<li>Site-wide error messaging system with single strategically placed component</li>
+									<li>Front-end filtering and reordering of event list for speedy interaction</li>
+								</ul>
+								<p>This was a fun project and I am proud of the visual appeal of its current form.</p>
+
 								<div class="centeredLink">
 									<span class="screenshot">
 										<a href="https://mixmastert.github.io/fractalscope" />

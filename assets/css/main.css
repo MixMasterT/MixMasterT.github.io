@@ -1327,6 +1327,24 @@
 			border-left: 0;
 		}
 
+		.frontpage-skills {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+
+		}
+
+		.frontpage-skills li {
+			margin-left: 1em;
+
+		}
+
+		.frontpage-skills li span {
+			left: -1em;
+			position: relative;
+		}
+
 		body.is-article-visible #header {
 			-moz-transform: scale(0.95);
 			-webkit-transform: scale(0.95);
@@ -1568,9 +1586,20 @@
 	/*.screenshot {
 		text-align: center;
 	} */
-	.screenshot img {
-		width: 90%;
+	.screenshot {
+		width: 400px;
+		height: auto;
 		object-fit: cover;
+	}
+
+	.screenshot img, .screenshot iframe {
+		width: 400px;
+		height: auto;
+	}
+
+	#strv-demo {
+		width: 400px;
+		height: 600px;
 	}
 
 	#work h3 {
