@@ -1597,6 +1597,17 @@
 		height: auto;
 	}
 
+	#app-image {
+		width: 400px;
+		height: 500px;
+		overflow: hidden;
+	}
+
+	#app-image img {
+		position: absolute;
+		display: block;
+	}
+
 	#strv-demo {
 		width: 400px;
 		height: 600px;

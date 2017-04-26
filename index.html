@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-			<script>
+			<!-- <script>
 				function createIframe(){
 				  var i = document.createElement("iframe");
 				  i.src = "https://travel-agent-aloysius-53663.netlify.com/";
@@ -32,7 +32,7 @@
 					window.attachEvent("onload", createIframe);
 				}
 				else window.onload = createIframe;
-		</script>
+		</script> -->
 	</head>
 	<body>
 
@@ -127,6 +127,9 @@
 
 								<div class="centeredLink">
 									<span class="screenshot" id="strv-demo">
+										<a href="https://travel-agent-aloysius-53663.netlify.com/" target='_blank'>
+											<img src="images/strv_demo.gif" alt="Front-end demo project" />
+										</a>
 									</span>
 								<h3><a href="https://travel-agent-aloysius-53663.netlify.com/" />Awesome Events</a></h3>
 								</div>
@@ -140,11 +143,11 @@
 
 								<div class="centeredLink">
 									<span class="screenshot">
-										<a href="https://mixmastert.github.io/fractalscope" />
+										<a target='_blank' href="https://mixmastert.github.io/fractalscope" />
 											<img src="images/fractalscope_main.png" alt="Fractalscope Image" />
 										</a>
 									</span>
-								<h3><a href="https://mixmastert.github.io/fractalscope" />Fractalscope</a></h3>
+								<h3><a target='_blank' href="https://mixmastert.github.io/fractalscope" />Fractalscope</a></h3>
 								</div>
 								<h4>Vanilla JavaScript (ES6) project that leverages the Canvas API to render beautiful images</h4>
 								<ul>
@@ -156,11 +159,11 @@
 
 								<div class="centeredLink">
 									<span class="screenshot">
-										<a href="http://youthworkhub.org" />
+										<a target='_blank' href="http://youthworkhub.org" />
 											<img src="images/youth_work_hub_splash.png" alt="Youth Work Hub Splash Image" />
 										</a>
 									</span>
-									<h3><a href="http://youthworkhub.org" />Youth Work Hub</a></h3>
+									<h3><a target='_blank' href="http://youthworkhub.org" />Youth Work Hub</a></h3>
 								</div>
 								<h4>React / Redux frontend, custom rails JSON api backend</h4>
 								<ul>
@@ -170,7 +173,15 @@
 								</ul>
 								<p>This non-profit concept is designed to help build community by allowing people to post jobs for young people to accept. Young workers can earn money and learn responsibility. Employers who post jobs get help as needed and make a positive contribution to the lives of young people in their community.</p>
 
-								<h3><a href="https://kevinmoore9.github.io/ticker-tycoon/" />Ticker Tycoon</a></h3>
+								<div class="centeredLink">
+									<span class="screenshot">
+										<a target='_blank' href="https://kevinmoore9.github.io/ticker-tycoon/" />
+											<img id="app-image" src="images/searchstocks.gif" alt="image from app" />
+										</a>
+									</span>
+									<h3><a href="https://kevinmoore9.github.io/ticker-tycoon/" />Ticker Tycoon</a></h3>
+								</div>
+
 								<h4>Full-stack Mobile App for iOS implemented in just one week</h4>
 								<ul>
 									<li>Custom RESTful API from rails backend serves account info to app in JSON format </li>
@@ -178,7 +189,6 @@
 									<li>built in React-Native to facilitate cross-platform adaptation</li>
 								</ul>
 								<p>This app allows users to play the stock market without assuming any financial risk.</p>
-
 							</article>
 
 						<!-- About -->
