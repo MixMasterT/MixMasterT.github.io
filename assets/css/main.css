@@ -1586,6 +1586,12 @@
 	/*.screenshot {
 		text-align: center;
 	} */
+	.pdf-link {
+		float: right;
+		position: relative;
+		font-size: 1.2em;
+		top: -3.6em;
+	}
 	.screenshot {
 		width: 400px;
 		height: auto;
